@@ -8,6 +8,6 @@ export class ItemsController {
 
   @Get(':id')
   async getItem(@Param('id') id: string): Promise<Item> {
-    return await this.itemsService.findOne(+id); // แปลง id เป็นตัวเลข
+    return await this.itemsService.findOne(+id);
   }
 }
